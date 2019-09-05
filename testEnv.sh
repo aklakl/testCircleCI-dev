@@ -14,8 +14,14 @@ echo '/n'
 #ipv6
 #curl 'https://api6.ipify.org?format=json'
 
+#start a http server
+sudo node testHttpServer.js >http.log &
 
+#make a http requst
+curl http://127.0.0.1?flag=testing
 
+#verify the log
+cat http.log
 
 
 #curl https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-linux-amd64.zip
@@ -31,15 +37,15 @@ sudo ./ngrok authtoken 1QO6q3pZ9NXTB7iNqtoQ6opzih9_3QZHCsqjxDguoNjPb7dKJ
 #https://dashboard.ngrok.com/get-started
 sudo nohup bash ngrok http 8080 >ngrok.log &
 
-echo 'waiting 5 for showing ngrok.log '
-sleep 5
+echo 'waiting for showing ngrok.log '
+sleep 3
 
 #monitor the log
 cat ngrok.log
 
 
-echo 'waiting 5 for showing the public url'
-sleep 5
+echo 'waiting for showing the public url'
+sleep 3
 
 #showing the public url
 curl http://127.0.0.1:4040
