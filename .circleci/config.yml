@@ -36,3 +36,4 @@ jobs:
       - run: curl 'https://api.ipify.org?format=json'
       - run: sudo bash testEnv.sh
       - run: echo 'Done All the things'
+      #- run: node testHttpRequest.js
