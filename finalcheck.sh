@@ -7,3 +7,6 @@ ps -ef
 
 echo =========checking the network with port============
 netstat -aptn 
+
+echo =========checking ngrok.log============
+cat ngrok.log
