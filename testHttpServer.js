@@ -10,7 +10,7 @@ var server = http.createServer(function (request, response) {
 })
 
 
-server.listen(80, '127.0.0.1')
+server.listen(8080, '127.0.0.1')
 
 
-console.log('started 80 http server')
+console.log('started  http server')
