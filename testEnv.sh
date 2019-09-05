@@ -29,7 +29,7 @@ echo 'set ngrok authtoken'
 sudo ./ngrok authtoken 1QO6q3pZ9NXTB7iNqtoQ6opzih9_3QZHCsqjxDguoNjPb7dKJ
 
 #https://dashboard.ngrok.com/get-started
-sudo nohup bash ngrok http 80 >ngrok.log &
+sudo nohup bash ngrok http 8080 >ngrok.log &
 
 echo 'waiting 5 for showing ngrok.log '
 sleep 5
