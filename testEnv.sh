@@ -16,12 +16,16 @@ echo '/n'
 
 #start a http server
 sudo node testHttpServer.js >http.log &
+sleep 3
 
 #make a http requst
 curl http://127.0.0.1:8080?flag=testing
+sleep 3
 
 #verify the log
 cat http.log
+
+
 
 
 #curl https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-linux-amd64.zip
