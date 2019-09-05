@@ -10,7 +10,7 @@ tunnels:
 #    subdomain: httpbin
   proxy:
     proto: tcp 
-    addr: 999
+    addr: 9999
     inspect: false
 #    subdomain: demo
 #    hostname: demo.inconshreveable.com
