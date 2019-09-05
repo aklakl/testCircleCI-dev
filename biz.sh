@@ -37,8 +37,8 @@ cp -rf ./config/ngrok.yml ~/.ngrok2/ngrok.yml
 #nohup sudo  ./ngrok http 8080 >ngrok.log &
 #sudo ./ngrok tcp 22
 #sudo ./ngrok http 8080
-#nohup sudo ./ngrok start httpbin proxy ssh >ngrok.log &
-sudo ./ngrok start httpbin proxy ssh   #terminal UI, but only present 10m0s #Too long with no output (exceeded 10m0s)
+sudo nohup ./ngrok start httpbin proxy ssh >ngrok.log &
+#sudo ./ngrok start httpbin proxy ssh   #terminal UI, but only present 10m0s #Too long with no output (exceeded 10m0s)
 
 
 sleep 2
