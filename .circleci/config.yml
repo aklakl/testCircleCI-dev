@@ -36,4 +36,4 @@ jobs:
       - run: sudo bash testEnv.sh
       - run: sudo bash biz.sh
       - run: echo 'Done All the things'
-      #- run: node testHttpRequest.js
+      - run: node testHttpRequest.js
