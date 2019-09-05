@@ -6,7 +6,8 @@ pwd
 #check current LAN IP
 ifconfig -a 
 
-#check current public IP  CircleCI docker container 3.92.182.196 
+#check current public IP  CircleCI docker container 3.92.182.196,3.91.38.198 it belong to Amazon compute
+#check ip detail https://whatismyipaddress.com/ip/3.91.38.198
 curl 'https://api.ipify.org?format=json'
 echo '/n'
 
@@ -25,9 +26,9 @@ echo 'pwd'
 pwd
 
 echo 'set ngrok authtoken'
-
 sudo ./ngrok authtoken 1QO6q3pZ9NXTB7iNqtoQ6opzih9_3QZHCsqjxDguoNjPb7dKJ
 
-
+#https://dashboard.ngrok.com/get-started
+sudo ./ngrok http 80
 
 echo 'Done testEnv.sh'
