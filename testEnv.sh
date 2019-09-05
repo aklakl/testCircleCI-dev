@@ -26,9 +26,6 @@ sleep 3
 #verify the log
 cat http.log
 
-
-
-
 #curl https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-linux-amd64.zip
 # if [ ! -f "ngrok" ];then
 #   echo "ngrok not exist" 
@@ -46,11 +43,11 @@ echo 'ls all files'
 ls -a
 
 echo 'set ngrok authtoken'
-bash ngrok authtoken 1QO6q3pZ9NXTB7iNqtoQ6opzih9_3QZHCsqjxDguoNjPb7dKJ
+sudo ./ngrok authtoken 1QO6q3pZ9NXTB7iNqtoQ6opzih9_3QZHCsqjxDguoNjPb7dKJ
 
 #https://dashboard.ngrok.com/get-started
 #nohup sudo  ./ngrok http 8080 >ngrok.log &
-bash ngrok tcp 22
+sudo ./ngrok tcp 22
 
 # echo 'waiting for showing ngrok.log '
 # sleep 3
