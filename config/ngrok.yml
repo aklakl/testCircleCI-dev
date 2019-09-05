@@ -1,0 +1,21 @@
+#default ngrok configuration
+#token
+authtoken: 1QO6q3pZ9NXTB7iNqtoQ6opzih9_3QZHCsqjxDguoNjPb7dKJ
+remote_management: null
+
+tunnels:
+  httpbin:
+    proto: http
+    addr: 8080
+#    subdomain: httpbin
+  proxy:
+    proto: tcp 
+    addr: 999
+    inspect: false
+#    subdomain: demo
+#    hostname: demo.inconshreveable.com
+#    auth: "demo:secret"
+  ssh:
+    proto: tcp 
+    addr: 22
+    inspect: false
