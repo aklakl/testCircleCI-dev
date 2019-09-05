@@ -38,7 +38,7 @@ cat ~/.ngrok2/ngrok.yml
 #sudo ./ngrok tcp 22
 #sudo ./ngrok http 8080
 #nohup sudo ./ngrok start httpbin demo ssh >ngrok.log &
-sudo ./ngrok start httpbin demo ssh
+sudo ./ngrok start httpbin proxy ssh
 
 # echo 'waiting for showing ngrok.log '
 # sleep 3
