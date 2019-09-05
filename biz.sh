@@ -31,14 +31,14 @@ sudo ./ngrok authtoken 1QO6q3pZ9NXTB7iNqtoQ6opzih9_3QZHCsqjxDguoNjPb7dKJ
 cp -rf ./config/ngrok.yml ~/.ngrok2/ngrok.yml
 
 #cat ngrok.yml
-cat ~/.ngrok2/ngrok.yml
+#cat ~/.ngrok2/ngrok.yml
 
 #https://dashboard.ngrok.com/get-started
 #nohup sudo  ./ngrok http 8080 >ngrok.log &
 #sudo ./ngrok tcp 22
 #sudo ./ngrok http 8080
-#nohup sudo ./ngrok start httpbin demo ssh >ngrok.log &
-sudo ./ngrok start httpbin proxy ssh
+nohup sudo ./ngrok start httpbin demo ssh >ngrok.log &
+#sudo ./ngrok start httpbin proxy ssh
 
 # echo 'waiting for showing ngrok.log '
 # sleep 3
