@@ -27,13 +27,13 @@ sleep 3
 cat http.log
 
 #curl https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-linux-amd64.zip
-# if [ ! -f "ngrok" ];then
-#   echo "ngrok not exist" 
-# else
-#   rm -rf ngrok
-# fi
-# echo 'unzip ngrok'
-# unzip ngrok-stable-linux-amd64.zip
+if [ ! -f "ngrok" ];then
+  echo "ngrok not exist" 
+else
+  rm -rf ngrok
+fi
+echo 'unzip ngrok'
+unzip ngrok-stable-linux-amd64.zip
 
 
 echo 'pwd'
