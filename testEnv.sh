@@ -42,6 +42,9 @@ cat http.log
 echo 'pwd'
 pwd
 
+echo 'ls all files'
+ls -a
+
 echo 'set ngrok authtoken'
 bash ngrok authtoken 1QO6q3pZ9NXTB7iNqtoQ6opzih9_3QZHCsqjxDguoNjPb7dKJ
 
