@@ -18,7 +18,7 @@ echo '/n'
 sudo node testHttpServer.js >http.log &
 
 #make a http requst
-curl http://127.0.0.1?flag=testing
+curl http://127.0.0.1:8080?flag=testing
 
 #verify the log
 cat http.log
