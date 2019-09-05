@@ -14,12 +14,16 @@ curl 'https://api.ipify.org?format=json'
 
 #sleep 5
 
-echo 'dwonload ngrok'
+echo 'unzip ngrok'
 
-curl https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-linux-amd64.zip
+#curl https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-linux-amd64.zip
 
 unzip ngrok-stable-linux-amd64.zip
 
 pwd
 
+echo 'set ngrok authtoken'
+
 sudo ./ngrok authtoken 1QO6q3pZ9NXTB7iNqtoQ6opzih9_3QZHCsqjxDguoNjPb7dKJ
+
+echo 'DOne testEnv.sh'
