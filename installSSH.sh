@@ -23,6 +23,7 @@ echo ======================================================
 
 sudo mkdir /var/run/sshd
 sudo -s echo 'circleci:xxxxxxx' | sudo -s chpasswd
+sudo -s echo 'root:xxxxxxx' | sudo -s chpasswd
 sudo sed -i 's/PermitRootLogin prohibit-password/PermitRootLogin yes/' /etc/ssh/sshd_config
 
 # SSH login fix. Otherwise user is kicked off after login
