@@ -14,7 +14,7 @@ echo '/n'
 #ipv6
 #curl 'https://api6.ipify.org?format=json'
 
-#sleep 5
+
 
 
 
@@ -29,6 +29,14 @@ echo 'set ngrok authtoken'
 sudo ./ngrok authtoken 1QO6q3pZ9NXTB7iNqtoQ6opzih9_3QZHCsqjxDguoNjPb7dKJ
 
 #https://dashboard.ngrok.com/get-started
-sudo ./ngrok http 80
+sudo nohup ./ngrok http 80 >ngrok.log &
+
+sleep 5
+
+#monitor the log
+cat ngrok.log
+
+#showing the public url
+curl http://127.0.0.1:4040
 
 echo 'Done testEnv.sh'
