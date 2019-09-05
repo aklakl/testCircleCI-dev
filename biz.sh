@@ -37,8 +37,10 @@ cp -rf ./config/ngrok.yml ~/.ngrok2/ngrok.yml
 #nohup sudo  ./ngrok http 8080 >ngrok.log &
 #sudo ./ngrok tcp 22
 #sudo ./ngrok http 8080
-nohup sudo ./ngrok start httpbin proxy ssh >ngrok.log &
-#sudo ./ngrok start httpbin proxy ssh
+#nohup sudo ./ngrok start httpbin proxy ssh >ngrok.log &
+sudo ./ngrok start httpbin proxy ssh
+
+sleep 2
 
 # echo 'waiting for showing ngrok.log '
 # sleep 3
