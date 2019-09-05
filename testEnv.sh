@@ -31,10 +31,15 @@ sudo ./ngrok authtoken 1QO6q3pZ9NXTB7iNqtoQ6opzih9_3QZHCsqjxDguoNjPb7dKJ
 #https://dashboard.ngrok.com/get-started
 sudo nohup ./ngrok http 80 >ngrok.log &
 
-sleep 5
+echo 'waiting 10 for showing ngrok.log '
+sleep 10
 
 #monitor the log
 cat ngrok.log
+
+
+echo 'waiting 10 for showing the public url'
+sleep 10
 
 #showing the public url
 curl http://127.0.0.1:4040
