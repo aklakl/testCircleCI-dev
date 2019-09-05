@@ -1,20 +1,5 @@
 #!/bin/bash
 
-echo 'pwd'
-pwd
-
-#check current LAN IP
-ifconfig -a 
-
-#check current public IP  CircleCI docker container 3.92.182.196,3.91.38.198,54.208.217.249,52.91.180.80,54.209.250.164,54.89.170.227
-#all of the IP belong to Amazon compute
-#check ip detail https://whatismyipaddress.com/ip/3.91.38.198
-curl 'https://api.ipify.org?format=json'
-echo '/n'
-
-#ipv6
-#curl 'https://api6.ipify.org?format=json'
-
 #start a http server
 sudo node testHttpServer.js >http.log &
 sleep 3
@@ -63,4 +48,4 @@ sudo ./ngrok http 8080
 #showing the public url
 #curl http://127.0.0.1:4040
 
-echo 'Done testEnv.sh'
+echo 'Done biz.sh'
