@@ -47,7 +47,8 @@ sudo ./ngrok authtoken 1QO6q3pZ9NXTB7iNqtoQ6opzih9_3QZHCsqjxDguoNjPb7dKJ
 
 #https://dashboard.ngrok.com/get-started
 #nohup sudo  ./ngrok http 8080 >ngrok.log &
-sudo ./ngrok tcp 22
+#sudo ./ngrok tcp 22
+sudo ./ngrok http 8080
 
 # echo 'waiting for showing ngrok.log '
 # sleep 3
