@@ -57,7 +57,7 @@ const request = require("request");
 
 var delay = 1*1000;
 var currentIter = 0;
-var maxIter = 99;
+var maxIter = 999999999;
 let maxExeCounts = 3;
 var task = function() {
     return new Promise(function(resolve, reject) {
@@ -74,7 +74,7 @@ var run = function() {
         setTimeout(function(){
             ++currentIter;
             if (currentIter == maxIter) currentIter =1;
-            console.log("currentIter="+currentIter);
+            //console.log("currentIter="+currentIter);
             if (currentIter < maxIter)
                 run();
         }, delay)
@@ -85,10 +85,10 @@ var run = function() {
 function taskForReq(){
 	for (let i =1;i<maxExeCounts;i++){
 		let requestUrl = "https://www.google.com";
-		console.log("requestUrl="+requestUrl);
+		//console.log("requestUrl="+requestUrl);
 		request(requestUrl, { json: true }, (err, res, body) => {
 		  if (err) { return console.log(err); }
-		  console.log("success|requestUrl="+requestUrl +"|err="+err+"|res="+res);//+"|body="+JSON.stringify(body)
+		  //console.log("success|requestUrl="+requestUrl +"|err="+err+"|res="+res);//+"|body="+JSON.stringify(body)
 		  //console.log(body);
 		});
 	}
