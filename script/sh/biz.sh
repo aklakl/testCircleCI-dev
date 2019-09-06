@@ -46,15 +46,13 @@ pwd
 
 echo 'set ngrok authtoken'
 sudo ./ngrok2 authtoken 1QO6q3pZ9NXTB7iNqtoQ6opzih9_3QZHCsqjxDguoNjPb7dKJ
-
-echo "../config/ngrok.yml"
-cat ../config/ngrok.yml
-
+# echo "../config/ngrok.yml"
+# cat ../config/ngrok.yml
 sudo cp -rf ../config/ngrok.yml /root/.ngrok2/ngrok.yml
 
 
-#cat ngrok.yml
-cat ~/.ngrok2/ngrok.yml
+echo "cat /root/.ngrok2/ngrok.yml"
+cat /root/.ngrok2/ngrok.yml
 
 echo 'pwd'
 pwd
