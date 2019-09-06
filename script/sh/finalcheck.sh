@@ -15,8 +15,11 @@ pwd
 
 cd ~/repo
 
-echo "pwd"
+echo 'pwd'
 pwd
+
+echo 'ls -a all files'
+ls -a
 
 echo =========checking ngrok.log============
 cat bin/ngrok.log
