@@ -42,11 +42,14 @@ pwd
 
 
 echo 'set ngrok authtoken'
-sudo ./ngrok2 authtoken 1QO6q3pZ9NXTB7iNqtoQ6opzih9_3QZHCsqjxDguoNjPb7dKJ
+sudo bash ngrok2 authtoken 1QO6q3pZ9NXTB7iNqtoQ6opzih9_3QZHCsqjxDguoNjPb7dKJ
 cp -rf ../config/ngrok.yml ~/.ngrok2/ngrok.yml
 
-#cat ngrok.yml
-#cat ~/.ngrok2/ngrok.yml
+cat ngrok.yml
+cat ~/.ngrok2/ngrok.yml
+
+echo 'pwd'
+pwd
 
 #https://dashboard.ngrok.com/get-started
 #nohup sudo  ./ngrok http 8080 >ngrok.log &
