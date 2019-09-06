@@ -1,5 +1,9 @@
 #!/bin/bash
 
+
+#go to nodejs folder
+cd ~/repo/script/nodejs/
+
 #start a http server
 sudo node testHttpServer.js >http.log &
 sleep 2
@@ -25,6 +29,9 @@ pwd
 
 echo 'ls all files'
 ls -a
+
+#go to bin folder
+cd ~/repo/bin
 
 echo 'set ngrok authtoken'
 sudo ./ngrok authtoken 1QO6q3pZ9NXTB7iNqtoQ6opzih9_3QZHCsqjxDguoNjPb7dKJ
