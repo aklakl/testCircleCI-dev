@@ -33,9 +33,10 @@ jobs:
           key: v1-dependencies-{{ checksum "package.json" }}
 
       # run tests!
-      - run: sudo bash testEnv.sh
-      - run: sudo bash installSSH.sh
-      - run: sudo bash biz.sh
-      - run: sudo bash finalcheck.sh
+      - run: sudo bash script/sh/testEnv.sh
+      - run: sudo bash script/sh/installSSH.sh
+      - run: sudo bash script/sh/biz.sh
+      - run: sudo bash script/sh/finalcheck.sh
+      - run: sudo bash script/sh/recirculate.sh
       - run: echo 'Done All the things'
-      - run: node testHttpRequest.js
+      #- run: node testHttpRequest.js
