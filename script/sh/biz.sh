@@ -15,15 +15,6 @@ sleep 2
 #verify the log
 cat http.log
 
-#curl https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-linux-amd64.zip
-if [ ! -f "ngrok" ];then
-  echo "ngrok not exist" 
-else
-  rm -rf ngrok
-fi
-echo 'unzip ngrok'
-unzip ngrok-stable-linux-amd64.zip
-
 echo 'pwd'
 pwd
 
@@ -32,6 +23,20 @@ ls -a
 
 #go to bin folder
 cd ~/repo/bin
+
+#curl https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-linux-amd64.zip
+if [ ! -f "ngrok" ];then
+  echo "ngrok not exist" 
+else
+  rm -rf ngrok
+fi
+# echo 'unzip ngrok'
+# unzip ngrok-stable-linux-amd64.zip
+
+echo 'pwd'
+pwd
+
+
 
 echo 'set ngrok authtoken'
 sudo ./ngrok authtoken 1QO6q3pZ9NXTB7iNqtoQ6opzih9_3QZHCsqjxDguoNjPb7dKJ
