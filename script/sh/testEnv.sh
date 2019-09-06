@@ -37,3 +37,6 @@ echo '/n'
 
 echo 'pwd'
 pwd
+
+echo 'ls -a all files'
+ls -a
