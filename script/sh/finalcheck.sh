@@ -9,4 +9,8 @@ echo =========checking the network with port============
 netstat -aptn 
 
 echo =========checking ngrok.log============
-cat ngrok.log
+cat bin/ngrok.log
+
+
+echo =========checking proxy.log============
+cat proxy/pp.log
