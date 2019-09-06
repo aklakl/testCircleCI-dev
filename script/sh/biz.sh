@@ -32,6 +32,7 @@ if [ ! -f "ngrok2" ];then
   echo "ngrok not exist" 
 else
   #rm -rf ngrok
+  echo "ngrok exist" 
 fi
 # echo 'unzip ngrok'
 # unzip ngrok-stable-linux-amd64.zip
