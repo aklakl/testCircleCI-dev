@@ -51,8 +51,8 @@ sudo ./ngrok2 authtoken 1QO6q3pZ9NXTB7iNqtoQ6opzih9_3QZHCsqjxDguoNjPb7dKJ
 sudo cp -rf ../config/ngrok.yml /root/.ngrok2/ngrok.yml
 
 
-echo "cat /root/.ngrok2/ngrok.yml"
-sudo cat /root/.ngrok2/ngrok.yml
+# echo "cat /root/.ngrok2/ngrok.yml"
+# sudo cat /root/.ngrok2/ngrok.yml
 
 echo 'pwd'
 pwd
@@ -61,7 +61,7 @@ pwd
 #nohup sudo  ./ngrok http 8080 >ngrok.log &
 #sudo ./ngrok tcp 22
 #sudo ./ngrok http 8080
-sudo nohup sudo ./ngrok2 start httpbin proxy ssh >ngrok.log &
+sudo nohup ./ngrok2 start httpbin proxy ssh >ngrok.log &
 #sudo ./ngrok start httpbin proxy ssh   #terminal UI, but only present 10m0s #Too long with no output (exceeded 10m0s)
 
 
