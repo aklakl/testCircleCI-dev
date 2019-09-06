@@ -31,7 +31,7 @@ cd ~/repo/bin
 if [ ! -f "ngrok2" ];then
   echo "ngrok not exist" 
 else
-  rm -rf ngrok
+  #rm -rf ngrok
 fi
 # echo 'unzip ngrok'
 # unzip ngrok-stable-linux-amd64.zip
@@ -40,12 +40,11 @@ echo 'pwd'
 pwd
 
 
-
 echo 'set ngrok authtoken'
 sudo bash ngrok2 authtoken 1QO6q3pZ9NXTB7iNqtoQ6opzih9_3QZHCsqjxDguoNjPb7dKJ
-cp -rf ../config/ngrok.yml ~/.ngrok2/ngrok.yml
+sudo cp -rf ../config/ngrok.yml ~/.ngrok2/ngrok.yml
 
-cat ngrok.yml
+#cat ngrok.yml
 cat ~/.ngrok2/ngrok.yml
 
 echo 'pwd'
@@ -55,7 +54,7 @@ pwd
 #nohup sudo  ./ngrok http 8080 >ngrok.log &
 #sudo ./ngrok tcp 22
 #sudo ./ngrok http 8080
-sudo nohup ./ngrok2 start httpbin proxy ssh >ngrok.log &
+sudo nohup sudo bash ngrok2 start httpbin proxy ssh >ngrok.log &
 #sudo ./ngrok start httpbin proxy ssh   #terminal UI, but only present 10m0s #Too long with no output (exceeded 10m0s)
 
 
