@@ -32,6 +32,11 @@ cd ../../proxy/
 sudo nohup node pp.js >pp.log &
 #sudo nohup node pp.js &>/dev/null &
 
+echo ========checking system process and network with port===========
+ps -ef 
+netstat -aptn 
+echo ========checking system process and network with port===========
+
 echo 'pwd'
 pwd
 ls -a
