@@ -13,7 +13,7 @@ ls -a
 
 
 echo "============================run switchroot.sh============================="
-sudo ./switchroot.sh
+sudo bash switchroot.sh
 
 sudo apt-get install expect
 sudo apt-get install vim
