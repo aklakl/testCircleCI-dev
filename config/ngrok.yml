@@ -9,7 +9,7 @@ tunnels:
     addr: 8080
 #    subdomain: httpbin
   proxy:
-    proto: udp 
+    proto: tcp 
     addr: 9999
     inspect: false
 #    subdomain: demo
