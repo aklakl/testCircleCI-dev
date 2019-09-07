@@ -36,7 +36,7 @@ jobs:
       - run: cd ~/repo
       #- run:  bash script/sh/testEnv.sh
       - run:  bash script/sh/installBaseTools.sh
-      - run:  bash script/sh/biz.sh
+#       - run:  bash script/sh/biz.sh
       - run:  bash script/sh/finalcheck.sh
       - run: sudo bash script/sh/recirculate.sh
       - run: echo 'Done All the things'
