@@ -1,6 +1,6 @@
 #default ngrok configuration
 #token
-authtoken: 1QO6q3pZ9NXTB7iNqtoQ6opzih9_3QZHCsqjxDguoNjPb7dKJ
+authtoken: 1QUxZgqQTr3WwA6I1MBY4FtW3RE_7VaXEeToeZme2XyGQVkeV
 remote_management: null
 
 tunnels:
@@ -19,3 +19,7 @@ tunnels:
     proto: tcp 
     addr: 22
     inspect: false
+#   ssh:
+#     proto: tcp 
+#     addr: 22
+#     inspect: false
