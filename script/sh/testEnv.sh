@@ -35,6 +35,24 @@ curl 'https://api.ipify.org?format=json'
 echo '/n'
 
 
+echo "===============================display the space==============================="
+df - h 
+
+echo "===============================check System user==============================="
+cat /etc/passwd | grep "/bin/bash" | grep -v "root" | cut -d ":" -f 1
+
+# check the PID 
+# ps -ef | grep "circleci-agent" | grep -v grep | awk '{print $2}'
+# pgrep -f "circleci-agent"
+
+# set circlecipid=$(ps -ef | grep "circleci-agent" | grep -v grep | awk '{print $2}')
+# kill -9 $circlecipid
+# #we can't kill the circleci-agent, will get error,follow this:
+# CircleCI was unable to execute the job to completion, because the CircleCI agent received a kill signal midway through the job.
+# This means that that either the agent got killed accidentally (through a killall command), or that the build container entrypoint (i.e. PID 1) allocated too much memory or terminated early.  Consider clearing entrypoint/command values and try again.
+
+
+echo "===============================display current path and files==============================="
 echo 'pwd'
 pwd
 
