@@ -1,6 +1,12 @@
 #!/bin/bash
 
 
+echo "===============================display current path and files==============================="
+echo 'pwd'
+pwd
+echo 'ls -a all files'
+ls -a
+
 echo =========go to nodejs folder=========
 cd ~/repo/script/nodejs/
 
