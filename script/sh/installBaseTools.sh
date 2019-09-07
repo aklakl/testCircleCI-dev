@@ -10,19 +10,19 @@ echo 'ls -a all files'
 ls -a
 
 
-
-
-echo "============================run switchroot.sh============================="
-sudo bash switchroot.sh
-
+echo "============================ install base tools============================"
 sudo apt-get install expect
 sudo apt-get install vim
 sudo apt-get install curl
 sudo apt-get install tail
 
+echo "============================run switchroot.sh============================="
+sudo bash switchroot.sh
+
 
 echo "============================run installSSH.sh============================="
-sudo ./installSSH.sh
+sudo bash installSSH.sh
+
 
 
 
