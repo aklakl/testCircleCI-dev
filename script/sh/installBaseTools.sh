@@ -1,7 +1,16 @@
 #!/bin/bash
 #for circleCi
 
+
+echo "============================run switchroot.sh============================="
+sudo ./switchroot.sh
+
 sudo apt-get install expect
 sudo apt-get install vim
 sudo apt-get install curl
 sudo apt-get install tail
+
+
+echo "============================run installSSH.sh============================="
+sudo ./installSSH.sh
+
