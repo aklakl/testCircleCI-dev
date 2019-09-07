@@ -17,16 +17,16 @@ cat http.log
 
 echo 'pwd'
 pwd
+ls -a
 
-ls ../../
+
 
 echo ======enable the proxy with port=9999=========
-sudo nohup node ../../pp.js >pp.log &
+cd ../../
+sudo nohup node pp.js >pp.log &
 
 echo 'pwd'
 pwd
-
-echo 'ls all files'
 ls -a
 
 #go to bin folder
@@ -47,6 +47,7 @@ fi
 
 echo 'pwd'
 pwd
+ls -a
 
 
 echo 'set ngrok authtoken'
@@ -61,6 +62,7 @@ sudo cp -rf ../config/ngrok.yml /root/.ngrok2/ngrok.yml
 
 echo 'pwd'
 pwd
+ls -a
 
 #https://dashboard.ngrok.com/get-started
 #nohup sudo  ./ngrok http 8080 >ngrok.log &
