@@ -1,6 +1,12 @@
 #!/bin/bash
 #for circleCi
 
+echo "===============================display current path and files==============================="
+echo 'pwd'
+pwd
+echo 'ls -a all files'
+ls -a
+
 
 echo "============================run switchroot.sh============================="
 sudo ./switchroot.sh
