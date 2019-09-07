@@ -22,7 +22,7 @@ ls -a
 
 
 echo ======enable the proxy with port=9999=========
-cd ../../
+cd ../../proxy/
 #sudo nohup node pp.js >pp.log &
 sudo nohup node pp.js &>/dev/null &
 
