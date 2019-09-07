@@ -23,7 +23,8 @@ ls -a
 
 echo =========checking ngrok.log============
 cat bin/ngrok.log
+ls -a bin/
 
 echo =========checking proxy.log============
 ls -a proxy/
-cat proxy/pp.log
+#cat proxy/pp.log
