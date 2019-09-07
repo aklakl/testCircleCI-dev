@@ -1,7 +1,7 @@
 #!/bin/bash
 #for circleCi
 
-cd ~/repo/scrpipt/sh/
+cd ~/repo/script/sh/
 
 echo "===============================display current path and files==============================="
 echo 'pwd'
