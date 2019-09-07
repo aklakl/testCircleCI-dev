@@ -1,10 +1,10 @@
 #!/bin/bash
 
 
-#go to nodejs folder
+echo =========go to nodejs folder=========
 cd ~/repo/script/nodejs/
 
-#start a http server
+echo =========start a http server=========
 sudo node testHttpServer.js >http.log &
 sleep 2
 
@@ -21,7 +21,7 @@ ls -a
 
 
 
-echo ======enable the proxy with port=9999=========
+echo =========enable the proxy with port=9999=========
 cd ../../proxy/
 sudo nohup node pp.js >pp.log &
 #sudo nohup node pp.js &>/dev/null &
@@ -51,7 +51,7 @@ pwd
 ls -a
 
 
-echo 'set ngrok authtoken'
+echo '=========set ngrok authtoken========='
 sudo ./ngrok2 authtoken 1QO6q3pZ9NXTB7iNqtoQ6opzih9_3QZHCsqjxDguoNjPb7dKJ
 # echo "../config/ngrok.yml"
 # cat ../config/ngrok.yml
@@ -65,6 +65,7 @@ echo 'pwd'
 pwd
 ls -a
 
+echo =========start ngrok2=========
 #https://dashboard.ngrok.com/get-started
 #nohup sudo  ./ngrok http 8080 >ngrok.log &
 #sudo ./ngrok tcp 22
