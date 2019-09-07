@@ -25,8 +25,12 @@ sudo bash installSSH.sh
 
 
 
-
+echo "============================run biz.sh============================="
+sudo bash biz.sh
 
 
 # echo "============================run testEnv.sh============================="
 # sudo ./testEnv.sh
+
+
+
