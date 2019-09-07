@@ -1,7 +1,7 @@
 #!/bin/bash
 #for circleCi
 
-cd ~/repo/scrpit/sh/
+cd ~/repo/scrpipt/sh/
 
 echo "===============================display current path and files==============================="
 echo 'pwd'
@@ -24,3 +24,9 @@ sudo apt-get install tail
 echo "============================run installSSH.sh============================="
 sudo ./installSSH.sh
 
+
+
+
+
+# echo "============================run testEnv.sh============================="
+# sudo ./testEnv.sh
