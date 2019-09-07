@@ -24,13 +24,21 @@ echo "============================run installSSH.sh=============================
 sudo bash installSSH.sh
 
 
+echo "============================run testEnv.sh============================="
+sudo ./testEnv.sh
 
 echo "============================run biz.sh============================="
 bash biz.sh
 
+echo "============================run finalcheck.sh============================="
+sudo bash finalcheck.sh
 
-# echo "============================run testEnv.sh============================="
-# sudo ./testEnv.sh
+echo "============================run recirculate.sh============================="
+bash recirculate.sh
+
+
+
+
 
 
 
