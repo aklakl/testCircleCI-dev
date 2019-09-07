@@ -1,11 +1,15 @@
 #!/bin/bash
 #for circleCi
 
+cd ~/repo/scrpit/sh/
+
 echo "===============================display current path and files==============================="
 echo 'pwd'
 pwd
 echo 'ls -a all files'
 ls -a
+
+
 
 
 echo "============================run switchroot.sh============================="
