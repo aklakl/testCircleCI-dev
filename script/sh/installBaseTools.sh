@@ -1,6 +1,9 @@
 #!/bin/bash
 #for circleCi
 
+# convert to unix file : 
+# dos2unix *.sh
+
 cd ~/repo/script/sh/
 
 echo "===============================display current path and files==============================="
@@ -15,6 +18,15 @@ sudo apt-get install expect
 sudo apt-get install vim
 sudo apt-get install curl
 sudo apt-get install tail
+sudo apt-get install git
+
+echo "============================ install debug tools============================"
+sudo apt-get lsof
+sudo apt-get install pstack
+sudo apt-get install strace
+
+sudo apt-get update -y
+
 
 echo "============================run switchroot.sh============================="
 sudo bash switchroot.sh
