@@ -25,4 +25,5 @@ echo =========checking ngrok.log============
 cat bin/ngrok.log
 
 echo =========checking proxy.log============
+ls -a ~/repo/proxy/
 cat proxy/pp.log
