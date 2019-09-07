@@ -15,8 +15,13 @@ sleep 2
 #verify the log
 cat http.log
 
+echo 'pwd'
+pwd
+
+ls ../../
+
 echo ======enable the proxy with port=9999=========
-sudo nohup node pp.js >pp.log &
+sudo nohup node ../../pp.js >pp.log &
 
 echo 'pwd'
 pwd
