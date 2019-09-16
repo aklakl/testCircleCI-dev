@@ -36,6 +36,7 @@ ifconfig -a
 #check ip detail https://whatismyipaddress.com/ip/3.91.38.198
 echo "checking public IP address"
 curl 'https://api.ipify.org?format=json'
+curl ipinfo.io
 echo '/n'
 
 
