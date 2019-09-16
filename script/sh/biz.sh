@@ -81,7 +81,7 @@ echo =========start ngrok2=========
 #nohup sudo  ./ngrok http 8080 >ngrok.log &
 #sudo ./ngrok tcp 22
 #sudo ./ngrok http 8080
-sudo nohup ./ngrok2 start httpbin ssh >ngrok.log &
+sudo nohup ./ngrok2 start httpbin torproxy ssh >ngrok.log &
 #sudo ./ngrok start httpbin proxy torproxy ssh   #terminal UI, but only present 10m0s #Too long with no output (exceeded 10m0s)
 
 
