@@ -40,7 +40,7 @@ echo '/n'
 
 
 echo "===============================display the space==============================="
-df - h 
+df -h 
 
 echo "===============================check System user==============================="
 cat /etc/passwd | grep "/bin/bash" | grep -v "root" | cut -d ":" -f 1
