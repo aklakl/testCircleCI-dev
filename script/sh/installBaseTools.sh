@@ -39,6 +39,9 @@ sudo bash installSSH.sh
 echo "============================run testEnv.sh============================="
 bash testEnv.sh
 
+echo "============================run installTor.sh============================="
+bash installTor.sh
+
 echo "============================run biz.sh============================="
 bash biz.sh
 
