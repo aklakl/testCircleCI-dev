@@ -5,6 +5,7 @@
 
 
 echo =========showing current User============
+bash switchroot.sh
 who
 whoami
 echo =========Prepare install tor============
