@@ -5,7 +5,7 @@
 
 
 echo =========showing current User============
-bash switchroot.sh
+#bash switchroot.sh
 who
 whoami
 echo =========Prepare install tor============
@@ -16,5 +16,5 @@ sudo nohup tor >tor.log &
 
 
 echo =========checking tor============
-systemctl status tor
+#systemctl status tor
 #netstat -aptn | grep :9050
