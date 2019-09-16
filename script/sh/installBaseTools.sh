@@ -36,7 +36,7 @@ echo "============================run installSSH.sh and setup password with root
 sudo bash installSSH.sh
 
 echo "============================run switchroot.sh============================="
-bash switchroot.sh
+#bash switchroot.sh
 
 
 echo "============================run testEnv.sh============================="
