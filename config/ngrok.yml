@@ -15,7 +15,7 @@ tunnels:
 #    subdomain: demo
 #    hostname: demo.inconshreveable.com
 #    auth: "demo:secret"
-  proxy:
+  torproxy:
     proto: tcp 
     addr: 9050
   ssh:
