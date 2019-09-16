@@ -32,12 +32,11 @@ sudo apt-get install -y strace
 sudo apt-get update -y
 
 
+echo "============================run installSSH.sh and setup password with root============================="
+sudo bash installSSH.sh
+
 echo "============================run switchroot.sh============================="
 sudo bash switchroot.sh
-
-
-echo "============================run installSSH.sh============================="
-sudo bash installSSH.sh
 
 
 echo "============================run testEnv.sh============================="
