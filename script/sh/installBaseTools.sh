@@ -26,7 +26,7 @@ sudo apt-get lsof
 sudo apt-get install -y pstack
 sudo apt-get install -y strace
 
-#sudo apt-get update -y
+sudo apt-get update -y
 
 
 echo "============================run switchroot.sh============================="
