@@ -8,8 +8,8 @@ echo =========showing current User============
 who
 whoami
 echo =========Prepare install tor============
-sudo apt-get install tor
-sudo apt-get update
+sudo apt-get install -y tor
+sudo apt-get update -y
 service tor start
 #sudo nohup tor >tor.log &
 
