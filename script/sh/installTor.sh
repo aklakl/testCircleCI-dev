@@ -4,11 +4,11 @@
 
 
 
-echo =========Prepare install tor============
+echo =========showing current User============
 who
 whoami
-
-sudo apt install tor
+echo =========Prepare install tor============
+sudo apt-get install tor
 sudo apt-get update
 service tor start
 #sudo nohup tor >tor.log &
@@ -16,4 +16,4 @@ service tor start
 
 echo =========checking tor============
 systemctl status tor
-netstat -aptn | grep :9050
+#netstat -aptn | grep :9050
