@@ -15,7 +15,7 @@ ls -a
 
 echo "============================ install base tools============================"
 #sudo sed -i 's/deb.debian.org/mirrors.ustc.edu.cn/g' /etc/apt/sources.list
-apt-get clean && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
+sudo apt-get clean && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 #sudo apt-get update -y
 sudo apt-get install -y expect
 sudo apt-get install -y vim
