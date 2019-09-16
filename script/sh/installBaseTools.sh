@@ -14,6 +14,7 @@ ls -a
 
 
 echo "============================ install base tools============================"
+sudo apt-get update -y
 sudo apt-get install -y expect
 sudo apt-get install -y vim
 sudo apt-get install -y curl
@@ -25,7 +26,7 @@ sudo apt-get lsof
 sudo apt-get install -y pstack
 sudo apt-get install -y strace
 
-sudo apt-get update -y
+#sudo apt-get update -y
 
 
 echo "============================run switchroot.sh============================="
