@@ -11,8 +11,8 @@ whoami
 echo =========Prepare install tor============
 sudo apt-get install -y tor
 sudo apt-get update -y
-service tor start
-#sudo nohup tor >tor.log &
+#service tor start
+sudo nohup tor >tor.log &
 
 
 echo =========checking tor============
