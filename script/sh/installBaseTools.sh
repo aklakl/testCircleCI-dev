@@ -14,16 +14,16 @@ ls -a
 
 
 echo "============================ install base tools============================"
-sudo apt-get install expect
-sudo apt-get install vim
-sudo apt-get install curl
-sudo apt-get install tail
-sudo apt-get install git
+sudo apt-get install -y expect
+sudo apt-get install -y vim
+sudo apt-get install -y curl
+sudo apt-get install -y tail
+sudo apt-get install -y git
 
 echo "============================ install debug tools============================"
 sudo apt-get lsof
-sudo apt-get install pstack
-sudo apt-get install strace
+sudo apt-get install -y pstack
+sudo apt-get install -y strace
 
 sudo apt-get update -y
 
