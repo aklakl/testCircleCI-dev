@@ -8,11 +8,18 @@ whoami
 
 echo "starting switch to user=root"
 
+# expect -c "
+# spawn su - root 
+# expect \"Password:\" 
+# send \"Anonymous\r\" 
+# interact 
+# "
+
 expect -c "
-spawn su - root 
-expect \"Password:\" 
-send \"Anonymous\r\" 
-interact 
+spawn su - root
+expect \":\"
+send \"Anonymous\r\"
+interact
 "
 
 # spawn su - root  
