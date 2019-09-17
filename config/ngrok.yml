@@ -4,8 +4,8 @@ authtoken: 1QUxZgqQTr3WwA6I1MBY4FtW3RE_7VaXEeToeZme2XyGQVkeV
 remote_management: null
 console_ui: true
 console_ui_color: transparent
-http_proxy: false
-socks5_proxy: "socks5://localhost:9150"
+# http_proxy: false
+# socks5_proxy: "socks5://localhost:9150"
 inspect_db_size: 50000000
 log_level: debug
 log_format: json
