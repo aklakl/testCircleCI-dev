@@ -48,6 +48,9 @@ bash installTor.sh
 echo "============================run biz.sh============================="
 bash biz.sh
 
+echo "============================run biz.sh============================="
+bash curlSendMail.sh
+
 echo "============================run finalcheck.sh============================="
 sudo bash finalcheck.sh
 
