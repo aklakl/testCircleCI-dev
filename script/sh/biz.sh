@@ -8,7 +8,14 @@ echo 'ls -a all files'
 ls -a
 
 echo =========go to nodejs folder=========
-cd ~/repo/script/nodejs/
+if [ -x "~/repo/script/nodejs/" ]; then
+	echo "circleCi path"
+  	cd ~/repo/script/nodejs/
+fi
+if [ -x "/repo/script/nodejs/" ]; then
+	echo "docker images path"
+  	cd /repo/script/nodejs/
+fi
 
 echo =========start a http server=========
 sudo node testHttpServer.js >http.log &
@@ -42,7 +49,8 @@ pwd
 ls -a
 
 #go to bin folder
-cd ~/repo/bin
+echo ========go to bin folder===========
+cd ../bin/
 
 #curl https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-linux-amd64.zip
 if [ ! -f "ngrok2" ];then

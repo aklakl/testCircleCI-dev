@@ -4,7 +4,15 @@
 # convert to unix file : 
 # dos2unix *.sh
 
-cd ~/repo/script/sh/
+pwd
+if [ -x "~/repo/script/sh/" ]; then
+	echo "circleCi path"
+  	cd ~/repo/script/sh/
+fi
+if [ -x "/repo/script/sh/" ]; then
+	echo "docker images path"
+  	cd /repo/script/sh/
+fi
 
 echo "===============================display current path and files==============================="
 echo 'pwd'
@@ -36,27 +44,27 @@ sudo apt-get update -y
 echo "============================run installSSH.sh and setup password with root============================="
 sudo bash installSSH.sh
 
-echo "============================run switchroot.sh============================="
-#bash switchroot.sh
-
-
-echo "============================run testEnv.sh============================="
-bash testEnv.sh
 
 echo "============================run installTor.sh============================="
 bash installTor.sh
 
-echo "============================run biz.sh============================="
-bash biz.sh
+echo "============================run switchroot.sh============================="
+#bash switchroot.sh
+
+echo "============================run testEnv.sh============================="
+bash testEnv.sh
 
 echo "============================run biz.sh============================="
-bash curlSendMail.sh
+bash biz.sh
 
 echo "============================run finalcheck.sh============================="
 sudo bash finalcheck.sh
 
-echo "============================run recirculate.sh============================="
-bash recirculate.sh
+echo "============================run curlSendMail.sh============================="
+bash curlSendMail.sh
+
+# echo "============================run recirculate.sh============================="
+# bash recirculate.sh
 
 
 
