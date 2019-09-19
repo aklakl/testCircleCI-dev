@@ -5,9 +5,8 @@
 #--------------------------------------------
 echo "=====start======="
  
-
-
-
+cd /root/
+git clone https://github.com/aklakl/testCircleCI-tor.git 
 
 
 echo "=====finish======="
