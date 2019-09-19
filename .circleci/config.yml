@@ -38,6 +38,6 @@ jobs:
       - run:  bash script/sh/installBaseTools.sh
 #       - run:  bash script/sh/biz.sh
 #       - run:  bash script/sh/finalcheck.sh
-#       - run: sudo bash script/sh/recirculate.sh
+      - run: sudo bash script/sh/recirculate.sh
 #       - run: echo 'Done All the things'
 #       - run: node testHttpRequest.js
