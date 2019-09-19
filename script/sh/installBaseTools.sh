@@ -19,10 +19,11 @@ echo "============================ install base tools===========================
 sudo apt-get update -y
 DEBIAN_FRONTEND=noninteractive sudo apt-get install -y --no-install-recommends apt-utils
 sudo apt-get install -y expect
-sudo apt-get install -y vim
-sudo apt-get install -y curl
-sudo apt-get install -y tail
-sudo apt-get install -y git
+# sudo apt-get install -y vim
+# sudo apt-get install -y curl
+# sudo apt-get install -y tail
+# sudo apt-get install -y git
+apt-get install -y vim curl tail telnet net-tools git
 
 echo "============================ install debug tools============================"
 sudo apt-get lsof
