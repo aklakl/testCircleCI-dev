@@ -5,13 +5,19 @@
 # dos2unix *.sh
 
 pwd
-if [ -x "~/repo/script/sh/" ]; then
+if [ -x "~/repo/script/sh/" ] | [ -x "/home/circleci/repo/script/sh/" ]  | [ -x "/home/root/repo/script/sh/"  ]  ; then
 	echo "circleCi path"
   	cd ~/repo/script/sh/
+else
+   echo "11111"
+	
 fi
-if [ -x "/repo/script/sh/" ]; then
+if [ -x "/repo/script/sh/" ]; 
+then
 	echo "docker images path"
   	cd /repo/script/sh/
+else
+   echo "2222"	
 fi
 
 echo "===============================display current path and files==============================="
