@@ -4,21 +4,24 @@
 # convert to unix file : 
 # dos2unix *.sh
 
+ls -l /home/circleci/repo/script/sh
 pwd
-if [ -x "~/repo/script/sh/" ] | [ -x "/home/circleci/repo/script/sh/" ]  | [ -x "/home/root/repo/script/sh/"  ]  ; then
-	echo "circleCi path"
-  	cd ~/repo/script/sh/
-else
-   echo "11111"
-	
-fi
-if [ -x "/repo/script/sh/" ]; 
+if [ -x "~/repo/script/sh" ] | [ -x "/home/circleci/repo/script/sh" ]  | [ -x "/home/root/repo/script/sh"  ] ; 
 then
-	echo "docker images path"
-  	cd /repo/script/sh/
+   echo "circleCi path"
+   cd ~/repo/script/sh/
 else
-   echo "2222"	
+   echo "11111"	
 fi
+
+if [ -x "/repo/script/sh" ]; 
+then
+   echo "docker images path"
+   cd /repo/script/sh/
+else
+   echo "22222"	
+fi
+
 
 echo "===============================display current path and files==============================="
 echo 'pwd'
