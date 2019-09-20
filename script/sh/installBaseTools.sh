@@ -11,7 +11,7 @@ then
    echo "circleCi path"
    cd ~/repo/script/sh/
 else
-   echo "11111"	
+   echo "not found circleCi path"	
 fi
 
 if [ -x "/repo/script/sh" ]; 
@@ -19,7 +19,7 @@ then
    echo "docker images path"
    cd /repo/script/sh/
 else
-   echo "22222"	
+   echo "not found docker images path"	
 fi
 
 
