@@ -4,7 +4,7 @@
 # convert to unix file : 
 # dos2unix *.sh
 
-ls -l /home/circleci/repo/script/sh
+
 pwd
 if [ -x "~/repo/script/sh" ] || [ -x "/home/circleci/repo/script/sh" ]  || [ -x "/home/root/repo/script/sh"  ] ; 
 then
@@ -53,7 +53,6 @@ pwd
 echo "============================checking installSSH ============================="
 if [ ! -x "/var/run/sshd" ]; 
 then
-	
 	echo "============================run installSSH.sh and setup password with root============================="
 	pwd
 	sudo bash installSSH.sh
