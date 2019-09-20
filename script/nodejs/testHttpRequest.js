@@ -1,14 +1,4 @@
-/**
 
-  @authors Ming Li (mingli19850915@gmail.com)
-  @date    2019-0904
-  @version 1.0.0
-  @remark
-   just for testing 
-
-  @resource
-
-*/
 
 
 
