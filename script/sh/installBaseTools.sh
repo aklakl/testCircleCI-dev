@@ -40,10 +40,14 @@ sudo apt-get install -y strace
 
 sudo apt-get update -y
 
-
-echo "============================run installSSH.sh and setup password with root============================="
-sudo bash installSSH.sh
-
+echo "============================checking installSSH ============================="
+if [ ! -x "/var/run/sshd" ]; 
+then
+	echo "============================run installSSH.sh and setup password with root============================="
+	sudo bash installSSH.sh
+else	
+	echo "============================SSH already installed no need install again ============================="
+fi
 
 echo "============================run installTor.sh============================="
 bash installTor.sh
