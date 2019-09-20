@@ -26,6 +26,8 @@ sudo -s echo 'circleci:Anonymous' | sudo -s chpasswd
 sudo -s echo 'root:Anonymous' | sudo -s chpasswd
 #sudo sed -i 's/PermitRootLogin prohibit-password/PermitRootLogin yes/' /etc/ssh/sshd_config
 sudo sed  '1 iPermitRootLogin yes' -i /etc/ssh/sshd_config 
+sudo sed  '2 iClientAliveInterval 60' -i /etc/ssh/sshd_config 
+
 
 # SSH login fix. Otherwise user is kicked off after login
 sudo sed 's@session\s*required\s*pam_loginuid.so@session optional pam_loginuid.so@g' -i /etc/pam.d/sshd
