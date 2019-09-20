@@ -40,7 +40,7 @@ sudo apt-get install -y expect
 # sudo apt-get install -y curl
 # sudo apt-get install -y tail
 # sudo apt-get install -y git
-sudo apt-get install -y vim curl tail telnet net-tools git node
+sudo apt-get install -y vim curl tails-installer telnet net-tools git node
 
 echo "============================ install debug tools============================"
 sudo apt-get lsof
