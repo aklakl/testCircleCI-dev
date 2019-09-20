@@ -6,7 +6,7 @@
 
 ls -l /home/circleci/repo/script/sh
 pwd
-if [ -x "~/repo/script/sh" ] | [ -x "/home/circleci/repo/script/sh" ]  | [ -x "/home/root/repo/script/sh"  ] ; 
+if [ -x "~/repo/script/sh" ] || [ -x "/home/circleci/repo/script/sh" ]  || [ -x "/home/root/repo/script/sh"  ] ; 
 then
    echo "circleCi path"
    cd ~/repo/script/sh/
