@@ -40,10 +40,13 @@ sudo apt-get install -y strace
 
 sudo apt-get update -y
 
+pwd
 echo "============================checking installSSH ============================="
 if [ ! -x "/var/run/sshd" ]; 
 then
+	
 	echo "============================run installSSH.sh and setup password with root============================="
+	pwd
 	sudo bash installSSH.sh
 else	
 	echo "============================SSH already installed no need install again ============================="
