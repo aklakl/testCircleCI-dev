@@ -13,14 +13,20 @@ netstat -aptn
 echo "pwd"
 pwd
 
-
-if [ -x "~/repo/" ]; then
-	echo "circleCi path"
-  	cd ~/repo/
+if [ -x "~/repo" ] || [ -x "/home/circleci/repo" ]  || [ -x "/home/root/repo"  ] ; 
+then
+   echo "found circleCi path"
+   cd ~/repo
+else
+   echo "not found circleCi path"	
 fi
-if [ -x "/repo" ]; then
-	echo "docker images path"
-  	cd /repo/
+
+if [ -x "/repo" ]; 
+then
+   echo "found docker images path"
+   cd /repo/
+else
+   echo "not found docker images path"	
 fi
 
 echo 'pwd'
@@ -30,8 +36,10 @@ echo 'ls -a all files'
 ls -a
 
 echo =========checking ngrok.log============
-cat bin/ngrok.log
-ls -a bin/
+tmpstr=`cat ngrok.log  | grep .ngrok.io`
+# ls -a bin/
+echo "tmpstr=${tmpstr}"
+
 
 echo =========checking proxy.log============
 ls -a proxy/
