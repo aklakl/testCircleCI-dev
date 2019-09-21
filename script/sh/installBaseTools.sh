@@ -75,8 +75,8 @@ bash biz.sh
 echo "============================run finalcheck.sh============================="
 sudo bash finalcheck.sh
 
-echo "============================run curlSendMail.sh============================="
-bash curlSendMail.sh
+# echo "============================run curlSendMail.sh============================="
+# bash curlSendMail.sh
 
 # echo "============================run recirculate.sh============================="
 # bash recirculate.sh
