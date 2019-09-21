@@ -39,7 +39,7 @@ echo =========checking ngrok.log============
 # tmpstr=`cat ngrok.log  | grep .ngrok.io`
 # ls -a bin/
 # echo "tmpstr=${tmpstr}"
-bash ngrokCheck.sh
+bash script/sh/ngrokCheck.sh
 
 
 echo =========checking proxy.log============
