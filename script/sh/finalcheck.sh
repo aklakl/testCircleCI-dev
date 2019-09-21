@@ -36,9 +36,10 @@ echo 'ls -a all files'
 ls -a
 
 echo =========checking ngrok.log============
-tmpstr=`cat ngrok.log  | grep .ngrok.io`
+# tmpstr=`cat ngrok.log  | grep .ngrok.io`
 # ls -a bin/
-echo "tmpstr=${tmpstr}"
+# echo "tmpstr=${tmpstr}"
+bash ngrokCheck.sh
 
 
 echo =========checking proxy.log============
