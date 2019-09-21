@@ -49,7 +49,7 @@ do
 done < tmp.log
 parameters0="$parameters0]";
 
-# echo "final$i=$parameters0";
+echo "finally found ngrok logs $i | detail=$parameters0";
 input=`echo ${parameters0} | sed 's/\"//g'`
 bash curlSendMail.sh  $input
 
