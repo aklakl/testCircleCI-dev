@@ -1,20 +1,34 @@
 #!/bin/bash
 #--------------------------------------------
 # comment
-# author：Ming Li
+# author：
 # site：
-# slogan：strive 
 # description : curlSendMail.sh, used mailjet token
 #--------------------------------------------
 
 
-echo "=====testing start======="
+
+# echo "Shell pass parameter instance!";
+# echo "File name of execution: $0";
+# echo "the first parameter is: $1";
+# echo "the second parameter is: $2";
+# echo "the third parameter is: $3";
+# echo "Shell pass parameter instance!";
+# echo "the first parameter is: $1";
+# echo "the number of parameters is: $#";
+# echo "the parameter passed is displayed as a string: $*";
+
+#accept the string as a parameter for email body
+if [ -n "$1" ] ;then
+    echo "the word you input is $1"
+    ngrokContent=$1
+fi
+
 currentDate=`date +"%Y%m%d%H%M%S"`
-echo ${currentDate}
+echo "=====curlSendMail start ${currentDate}======="
 
 #output=`curl 'https://api.ipify.org?format=json'`
 output=`curl ipinfo.io`
-
 # echo 'test =${output}'
 
 
@@ -37,8 +51,8 @@ body="{
         }
       ],
       \"Subject\": \"currentDate = ${currentDate}\",
-      \"TextPart\": \"test\",
-      \"HTMLPart\": \"<h3>${currentIPAddress}</h3>\"
+      \"TextPart\": \"\",
+      \"HTMLPart\": \"<h3>${currentIPAddress} <br> ${ngrokContent}</h3>\"
     }
   ]
 }"
@@ -54,4 +68,4 @@ https://api.mailjet.com/v3.1/send \
 -d "${body}"
 
 
-echo "=====testing end======="
+echo "=====curlSendMail end======="

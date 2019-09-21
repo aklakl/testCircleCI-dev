@@ -20,13 +20,15 @@
 #     fi
 # }
 
-# echo "Shell pass parameter instance!" ;
+# echo "Shell pass parameter instance!";
 # echo "File name of execution: $0";
 # echo "the first parameter is: $1";
 # echo "the second parameter is: $2";
 # echo "the third parameter is: $3";
-# echo "Shell pass parameter instance!" ;
+# echo "Shell pass parameter instance!";
 # echo "the first parameter is: $1";
+# echo "the number of parameters is: $#";
+# echo "the parameter passed is displayed as a string: $*";
 
 if which node; then
 	json="$1"
