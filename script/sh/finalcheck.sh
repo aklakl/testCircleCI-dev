@@ -10,24 +10,23 @@ netstat -aptn
 
 
 
-echo "pwd"
-pwd
+# echo "pwd"
+# pwd
+# if [ -x "~/repo" ] || [ -x "/home/circleci/repo" ]  || [ -x "/home/root/repo"  ] ; 
+# then
+#    echo "found circleCi path"
+#    cd ~/repo
+# else
+#    echo "not found circleCi path"	
+# fi
 
-if [ -x "~/repo" ] || [ -x "/home/circleci/repo" ]  || [ -x "/home/root/repo"  ] ; 
-then
-   echo "found circleCi path"
-   cd ~/repo
-else
-   echo "not found circleCi path"	
-fi
-
-if [ -x "/repo" ]; 
-then
-   echo "found docker images path"
-   cd /repo/
-else
-   echo "not found docker images path"	
-fi
+# if [ -x "/repo" ]; 
+# then
+#    echo "found docker images path"
+#    cd /repo/
+# else
+#    echo "not found docker images path"	
+# fi
 
 echo 'pwd'
 pwd
@@ -39,11 +38,11 @@ echo =========checking ngrok.log============
 # tmpstr=`cat ngrok.log  | grep .ngrok.io`
 # ls -a bin/
 # echo "tmpstr=${tmpstr}"
-bash script/sh/ngrokCheck.sh
+bash ngrokCheck.sh
 
 
 echo =========checking proxy.log============
-ls -a proxy/
+ls -a ../../proxy/
 #cat proxy/pp.log
 
 
